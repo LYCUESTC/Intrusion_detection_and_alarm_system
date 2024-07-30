@@ -1,17 +1,29 @@
-# Intrusion detection and alarm system
+## Summary：
 
-本项目是基于AMD Ryzen AI Software开发的一套人形检测报警系统，可以设置重点区域入侵检测报警。检测模型采用的是yolov8模型，可以根据官方demo实现。
+This project is a humanoid detection and alarm system developed based on AMD Ryzen AI Software, which can set up intrusion detection alarms in key areas. The detection model uses the YOLOV8 model, which can be implemented according to the official demo. link:<https://github.com/amd/RyzenAI-SW/tree/main/example/yolov8>。
 
-开发环境：widows11
+## Development dependency
+Run hardware：AMD Ryzen 9 7940HS
 
-开发工具：VS2019
+Development System：win11
 
-Ryzen AI版本：Version 1.1
+Development tool：VS2019
 
-系统流程图：![](图片3.png)
+Development language：C++11
 
-使用到的第三方：
+Ryzen AI version：1.1
 
-eigen；jsoncpp；opencv
+## Software
+
+System architecture diagram：![](1.png)
+
+## Compile and run
+Compiling: Directly compiling with vs2019 will generate an out directory, which will generate the executable file ai_app.exe.
+
+Run: We need to put OpenCV's DLL dynamic library and ai_app.exe in the same directory. And place yolov8_madel.onnx in the same level directory as ai_app.exe. We start the Win terminal and enter the ai_app.exe directory to execute ai_app.exe. At this point, we need to start another program with interface control to work together:<https://github.com/LYCUESTC/ai_control_system>
+
+Third parties used：
+
+eigen; jsoncpp; opencv
 
 ****
